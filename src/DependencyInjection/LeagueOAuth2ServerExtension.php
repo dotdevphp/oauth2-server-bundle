@@ -90,7 +90,7 @@ final class LeagueOAuth2ServerExtension extends Extension implements PrependExte
     {
         $container->prependExtensionConfig('doctrine', [
             'dbal' => [
-                'connections' => null,
+                //'connections' => null,
                 'types' => [
                     'oauth2_grant' => GrantType::class,
                     'oauth2_redirect_uri' => RedirectUriType::class,
